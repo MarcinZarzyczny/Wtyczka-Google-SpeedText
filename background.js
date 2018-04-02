@@ -18,11 +18,10 @@ $(function () {
 
     }
 
-
-
     var x = document.getElementById('K_Dodaj');
 
-    OtwartyFormularz = false;//Zmienna pomocnicza.
+    //Zmienna pomocnicza.
+    OtwartyFormularz = false;
 
     //Otwieranie formularza.
     function NowyFormularz() {
@@ -39,17 +38,16 @@ $(function () {
 
             OtwartyFormularz += true;
 
-                 ak = document.getElementById('E');
-            //Zamykanie formularza.
+     //Zamykanie formularza.
+                var ak = document.getElementById('E');
                 function ZamknijFormularz() {
                     if (OtwartyFormularz == true) {
                         alert = ("Dzia³a.")
                     };
                 };
-                E.onclick = ZamknijFormularz;
 
                 $('#Body').append(El);
-               // E.onclick = ZamknijFormularz;
+                E.onclick = ZamknijFormularz;
 
 
 
@@ -58,8 +56,6 @@ $(function () {
     };
 
     K_Dodaj.onclick = NowyFormularz;
-    //Zamykanie formularza.
-
 
 });
 
