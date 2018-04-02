@@ -16,50 +16,51 @@ $(function () {
             console.log(this.tekst);
         }
 
-        rysyj_kafelek() {
-            var kaf1Html = '<div class="kaf" id="kafelek1" title="'+ this.tekst+ '"><a class="a">' + this.skrut + '</a></div>';
-            var ElwmentK = $(kaf1Html);
-    
-
-            $('#divzk').append(ElwmentK);
-            y[i] = document.getElementsByClassName('kaf')[i];
-            y[i].onclick = function () {
-                console.log("dzia³a");
-            };
-            i++;
-        };
-    };
-
-    tab1 = [];
-     
-
-    function onclickHandler() {
-
-        k1.wstaw_tekst();
-
     }
-    var i = 0;
-     y = [];
+
+
 
     var x = document.getElementById('K_Dodaj');
 
-    function NowyKafelek() {      
+    OtwartyFormularz = false;//Zmienna pomocnicza.
 
-        var tekst = prompt("Wpisz tekst");
-        var skrut = tekst[0] + tekst[1];
+    //Otwieranie formularza.
+    function NowyFormularz() {
+        console.log("dzia³");
 
-        k1 = new kafelek(skrut, tekst);
-        
-        
-        k1.rysyj_kafelek();
-        tab1.push(k1);
+        if (OtwartyFormularz == false) {
+            var DTekst = '<div id="DTekst">' +
+                '<a>Wpisz tekst:</a>' +
+                '<input type="text" size="8">' +
+                '<input type="button" value="Ok" />' +
+                '<input type="button" value="Exit" id="E" />' +
+                '</div>';
+            var El = $(DTekst);
+
+            OtwartyFormularz += true;
+
+                 ak = document.getElementById('E');
+            //Zamykanie formularza.
+                function ZamknijFormularz() {
+                    if (OtwartyFormularz == true) {
+                        alert = ("Dzia³a.")
+                    };
+                };
+                E.onclick = ZamknijFormularz;
+
+                $('#Body').append(El);
+               // E.onclick = ZamknijFormularz;
+
+
+
+        } else alert("Zamknij formularz.")
        
-     };
+    };
 
-    K_Dodaj.onclick = NowyKafelek;
+    K_Dodaj.onclick = NowyFormularz;
+    //Zamykanie formularza.
 
 
-   
 });
 
 

@@ -1,12 +1,12 @@
 
 *{box-sizing:border-box;}
-body
-{
+body {
 	background-color: #1F252A;
-	
+    min-width: 100px;
+    min-height: 50px;
+    float: right;	
 }
-.gdiv 
-{
+.gdiv {
     min-width: 100px;
     min-height: 50px;
     margin: 1px;
@@ -14,13 +14,12 @@ body
     float: right;
     display: inline-block;
 }
-.kafelki_glowne
-{
+.kafelki_glowne {
     width: 40px;
     height: 40px;
     padding-top: 10px;
     margin: 5px;
-    background-color:  #1F252A;
+    background-color: #1F252A;
     float: right;
     display: block;
     text-align:center; 
@@ -41,25 +40,70 @@ body
     cursor:pointer;
 }
 .kafelki_glowne:hover {   
-   border-top-color: #D20019;
-        border-bottom-color: #D20019;
-        border-left-color: #D20019;
-        border-right-color: #D20019; 
-        color: red;
+    border-top-color: #D20019;
+    border-bottom-color: #D20019;
+    border-left-color: #D20019;
+    border-right-color: #D20019; 
+    color: red;
 }
 .a {
     display: block;
+
 }
-
-
+#DTekst {
+    width: 100px;
+    height: 100px;
+    background-color: #1F252A;
+    position: absolute;
+    color: #77A8C2;
+    float: right;
+    display: block;
+    border-top-style: solid;
+    padding-top: 4px;
+    text-align:center;
+}
+#DTekst> a {
+      color: #77A8C2;
+      display: block;
+      padding-bottom: 8px;
+}
+input[type="text"] {
+    color: #77A8C2;
+    background-color: #1A212F;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #77A8C2;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #77A8C2;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #77A8C2;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #77A8C2
+}
+#DTekst> input[type="button"] {
+    display: block;
+    float: left;
+    color: #77A8C2;
+    border-color: #77A8C2;
+    background-color: #1F252A;
+    margin-left: 11px;
+    margin-top: 10px;
+    border-width: 1px;
+}
 #divzk {
     width: 100px;
-    min-height: 50px;
+    min-height: 1500px;
     background-color: #77A8C2;
     float: right;
 }
-.kaf
-{
+#DTekst > input[type="button"]:hover {
+    color: red;
+    border-color: red;
+}
+.kaf {
     width: 40px;
     height: 40px;
     padding-top: 10px;
@@ -86,7 +130,7 @@ body
     border-right-color: #1F252A;
     cursor:pointer;
 }
-.kaf:hover{
+.kaf:hover {
         border-top-color: #D20019;
         border-bottom-color: #D20019;
         border-left-color: #D20019;
