@@ -1,5 +1,6 @@
 # Wtyczka-Google-SpeedText
 Status: w trakcie programowania. 
+
 Wykorzystywane technologie:
 - HTML 5;
 - CSS 3;
