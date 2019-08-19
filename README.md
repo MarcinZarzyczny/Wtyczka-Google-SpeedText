@@ -1,5 +1,5 @@
 # Wtyczka-Google-SpeedText
-Status: w trakcie programowania. 
+Status: w trakcie realizacji. 
 
 Wykorzystywane technologie:
 - HTML 5;
