@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "HelloWorld",
-  "description": "Nauka",
+  "name": "SpeedText",
+  "description": "Wtyczka Google",
   "version": "1.0",
 
   "icons": {
@@ -14,7 +14,11 @@
     "default_popup": "popup.html"
   },
 
-  "background": {
-    "scripts": [ "wackground.js" ]
-  }
+
+  "options_page": "Opcje.html",
+
+  "permissions": [
+    "storage"
+  ]
+
 }

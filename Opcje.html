@@ -1,0 +1,149 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+
+    <title>SpeedTxt Opcje</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="jquery-3.2.1.min.js"> </script>
+    <script src="PlikiJS/JSOpcjI.js" type="text/javascript" language="JavaScript"> </script>
+    <link rel="stylesheet" href="Style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="Style/styleOpcji.css" type="text/css" />
+
+</head>
+     
+<body>
+    <div id="kom" class="komunikat">
+        <a id="tz">Pomidor</a><br />
+        <input type="button" value="OK" class="prz" id="OKK" />
+    </div>
+    <div id="komods" class="komunikat">
+        <a id="tzw">Pomidor2</a><br />
+        <input type="button" value="OK" class="prz ods" id="OKOdswiez" />
+    </div>
+    <div class="container"> 
+        <div class="tytuł">
+            <h3>SpeedText</h3>
+        </div>
+        <div style="clear:both;"> </div>
+        <nav class="menu">
+            <div class="kafelek pierwszy_kafelek active"><a href="#Zakladka1">Opcje</a></div>
+            <div class="kafelek "><a href="#Zakladka2">Style</a></div>
+            <div class="kafelek "><a href="#Zakladka3">Kompozycje</a></div>
+            <div class="kafelek "><a href="#Zakladka4">Film</a></div>
+        </nav>
+        <div class="treść_zakładek">
+            <div id="Zakladka1" class="zakładka">
+                <a id="1">Podaj numer schowka, który chcesz edytować i kliknij "Edytuj".</a>
+                <input type="text" size="5" id="nrShowka" class="textInput" />
+                <input type="button" class="przycisk" value="Edytuj" id="ed" href="#Ed"/>
+                <div class="Edycja">
+                    <div class="be" id="Ed">
+                        <a>Nazwa schowka:</a>
+                        <input type="text" class="textInput" size="5" id="NazwaSchowka"  maxlength="3" value="1"/><br />
+                        <a>Tekst zapisany w schowku:</a>
+                        <textarea name="nazwa" cols="50" rows="3" class="textarea" id="ZapisanyTekst"></textarea><br />
+                        <input type="button" class="przycisk" id="OK" value="OK"/>
+                        <input type="button" class="przycisk" id="An" value="Anuluj"/>                        
+                    </div>                   
+                </div>
+                <a>Jeśli chcesz usunąć wszystkie swoje schowki, kliknij "Wyczyść".</a><br />
+                <input class="przycisk" type="button" value="Wyczyść" id="b1" />
+                <a class="uwaga">Uwaga!!! Po kliknięciu "Wyczyść" wszystkie schowki zostaną usunięte.</a>
+                <a class="uwaga">Strona zostanie odświeżona.</a>
+            </div>
+            <div style="clear:both;"> </div>
+            <div id="Zakladka2" class="zakładka">
+                <div class="d5">
+                    <h5>Ustaw własne kolory panelu schowków.</h5>
+                    <h6><b>Menu.</b></h6>
+
+                    <a>Tło menu.</a>
+                    <input type="color" value="#1F252A" id="zk1" />
+                    <div style="clear:both;"> </div>
+
+                    <a>Ramka oraz kolor napisów w przyciskach menu.</a>
+                    <input type="color" value="#77A8C2" id="zk2" />
+                    <div style="clear:both;"> </div>
+
+                    <a>Kolor przycisków.</a>
+                    <input type="color" value="#1F252A" id="zk3" />
+                    <div style="clear:both;"> </div>
+
+                    <h6><b>Schowki.</b></h6>
+                    <a>Tło schowków.</a>
+                    <input type="color" value="#77A8C2" id="zk4" />
+                    <div style="clear:both;"> </div>
+
+                    <a>Ramka oraz kolor napisów w schowkach.</a>
+                    <input type="color" value="#1F252A" id="zk5" />
+                    <div style="clear:both;"> </div>
+
+                    <a>Kolor schowków.</a>
+                    <input type="color" value="#77A8C2" id="zk6" />
+                    <div style="clear:both;"> </div>
+                    <a>Jeśli chcesz zachować zmiany w kolorach, kliknij "Zapisz".</a>
+                    <input class="przycisk" type="button" value="Zapisz" id="b6" />
+
+                    <a class="uwaga">Uwaga!!! Po kliknięciu "Zapisz" nastąpi odświeżenie przeglądarki w celu dokonania zmian.</a>
+                </div>
+                <div class="d6">
+                    <h6>Tak będzie wyglądał twój panel schowków, po zapisaniu zmian.</h6>
+                    <div class="szablon">
+                        <div class="gdiv" id="tr">
+                            <div id="K_Dodaj" class="kafelki_glowne" title="Dodaj nowy schowek."><a>DK</a></div>
+                            <div id="K_Usun" class="kafelki_glowne" title="Usuń niepotrzebny schowek."><a class="a">UK</a></div>
+                            <div style="clear:both;"> </div>
+                        </div>
+                        <div class="kg" id="divzk">
+                            <div class="kaf" id="kafelek1">
+                                <a class="a">PS</a>
+                                <a class="a1">1</a>
+                            </div>
+                            <div class="kaf" id="kafelek1">
+                                <a class="a">PS</a>
+                                <a class="a1">2</a>
+                            </div>
+                            <div class="kaf" id="kafelek1">
+                                <a class="a">PS</a>
+                                <a class="a1">3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"> </div>
+            </div>
+            <div id="Zakladka3" class="zakładka">
+                <div class="kt">
+                    <a id="uwaga1">Uwaga!!! Po kliknięciu wybranej kompozycji nastąpi odświeżenie przeglądarki w celu dokonania oraz zapisania zmian.</a>
+                </div>
+                <div class="skurka">
+                    <img id="s1" src="Grafika/s1.jpg" alt="Twoja przeglądarka nie obsługuje obrazów." title="Kliknij aby wybrać styl." />
+                </div>
+                <div class="skurka">
+                    <img id="s2" src="Grafika/s2.png" alt="Twoja przeglądarka nie obsługuje obrazów." title="Kliknij aby wybrać styl." />
+                </div>
+                <div class="skurka">
+                    <img id="s3" src="Grafika/s3.png" alt="Twoja przeglądarka nie obsługuje obrazów." title="Kliknij aby wybrać styl." />
+                </div>
+                <div class="skurka">
+                    <img id="s4" src="Grafika/s4.png" alt="Twoja przeglądarka nie obsługuje obrazów." title="Kliknij aby wybrać styl." />
+                </div>
+            </div>
+            <div id="Zakladka4" class="zakładka">
+                <h4>Tutaj będzie instrukcja obsługi i film.</h4>
+            </div>       
+        </div>
+    </div>    
+        <div style="clear:both;"> </div>
+        <footer class="stopka">
+            <p>2015 &copy; Designer marcinzarzyczny1@gmail.com</p>
+        </footer>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

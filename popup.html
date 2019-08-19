@@ -2,25 +2,58 @@
 <html lang="pl">
 
 <head>
-    
-    <title>SpidText</title>
+   
+    <title>SpeedTxt</title>
+    <meta charset="utf-8"/>
     <script src="jquery-3.2.1.min.js"> </script>
-    <script src="background.js"  language=javascript type="text/javascript"> </script> 
+    <script src="background.js" type="text/javascript" language="JavaScript"> </script> 
 
-    <link rel="stylesheet" href="reset.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="Style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="Style/style.css" type="text/css" />
 
 </head>
-<body id="Body">
-    <div class="gdiv" id="tr"> 
-        <!--<div id="DTekst" title=""></div>-->
-        <div id="K_Dodaj" class="kafelki_glowne" title="Dodaj nową szufladkę."><a class="a">DK</a></div>
-        <div id="K_Usun" class="kafelki_glowne" title="Usuń niepotszebną szufladkę."><a class="a">UK</a></div>  
-        <div style="clear:both;"> </div>
-    </div>   
-    <div class="kg" id= "divzk">
-     <!--<div class="kaf" id="kafelek1" title="tekst"><a>TU</a></div>-->
+<body clsss="body1">
 
-    </div> 
+    <div id="preorder">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div class="dg" id="dg1">
+        <div id="DTekst" class="st">
+            <a>Nazwa schowka, maksymalnie 3 znaki.</a>
+            <input type="text" size="1" class="Text" id="Tekst1" maxlength="3"/>
+            <a>Tekst do zapisania.</a>
+            <textarea name="nazwa" cols="10" rows="2" id="Tekst"></textarea>
+            <input type="button" value="OK" class="prz" id="OK"/>
+            <input type="button" value="Exit" class="prz" id="E"/>
+        </div>
+        <div id="UTekst" class="st">
+            <a>Wpisz numer schowka, który chcesz usunąć.</a>
+            <input type="text" size="4" class="Text" id="Tekst2"/>
+            <input type="button" value="OK" class="prz" id="Usun" />
+            <input type="button" value="Exit" class="prz" id="UExit"/>
+        </div>
+        <div id="kom" class="komunikat">
+            <a class="aa" id="tz">Pomidor</a><br/>
+            <input type="button" value="OK" class="prz" id="OKK" />
+        </div>
+        <div class="gdiv" id="tr">
+            <div id="K_Usun" class="kafelki_glowne" title="Usuń niepotrzebny schowek.">
+                <div class="belka3"></div>               
+            </div>
+            <div id="K_Dodaj" class="kafelki_glowne" title="Dodaj nowy schowek.">
+                <div class="belka1"></div>
+                <div class="belka2"></div>
+            </div>
+            <div style="clear:both;"> </div>
+        </div>
+        <div class="kg" id="divzk">
+        </div>
+        <div id="copy">
+            <textarea name="nazwa" cols="8" rows="1" id="Tekst3"></textarea>
+        </div>
+    </div>
 </body>
 </html>
