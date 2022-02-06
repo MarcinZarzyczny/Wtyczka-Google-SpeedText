@@ -1,0 +1,1 @@
+# SpeedText- Googole Chrome plug. #
